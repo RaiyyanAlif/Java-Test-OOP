@@ -6,7 +6,7 @@ java -version
 javac -version
 
 
-If javac shows a version you're done with steps below. If javac is not recognized, continue to step 2 to add JDK bin to PATH (or install JDK first).
+If javac shows a version , then it's okay . If javac is not recognized, continue to step 2 to add JDK bin to PATH (or install JDK first).
 
 2) (If needed) Add JDK bin to PATH 
 
@@ -46,18 +46,6 @@ public class Hello {
         System.out.println("Hello, World!");
     }
 }
-
-Option B — create file from PowerShell (one command)
-
-Open PowerShell and run (copy-paste):
-
-@'
-public class Hello {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-'@ | Out-File -FilePath "$env:USERPROFILE\Desktop\Hello.java" -Encoding utf8
 
 5) Compile the program (copy-paste)
 
